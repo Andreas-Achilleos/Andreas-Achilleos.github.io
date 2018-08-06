@@ -132,6 +132,55 @@ body {
     animation: particlemove 30s infinite;
 }
 
+/*LtoR background particles*/
+.space__particle:nth-child(7) {
+    top: 9px;
+    width: 50%;
+    height: 6%;
+    background: linear-gradient(to right,rgba(1, 98, 255, 0) , rgba(255, 255, 255, 0.8));
+    animation: particlemove 25s infinite;
+}
+
+.space__particle:nth-child(8) {
+    top: 39px;
+    width: 50%;
+    height: 3%;
+    background: linear-gradient(to right,rgba(22, 255, 1, 0) , rgba(255, 255, 255, 0.8));
+    animation: particlemove 40s infinite;
+}
+
+.space__particle:nth-child(9) {
+    top: 69px;
+    width: 50%;
+    height: 7%;
+    background: linear-gradient(to right,rgba(255, 5, 1, 0) , rgba(255, 255, 255, 0.8));
+    animation: particlemove 22s infinite;
+}
+
+.space__particle:nth-child(10) {
+    top: 99px;
+    width: 50%;
+    height: 2%;
+    background: linear-gradient(to right,rgba(1, 98, 255, 0) , rgba(255, 255, 255, 0.8));
+    animation: particlemove 50s infinite;
+}
+
+.space__particle:nth-child(11) {
+    top: 129px;
+    width: 50%;
+    height: 9%;
+    background: linear-gradient(to right,rgba(22, 255, 1, 0) , rgba(255, 255, 255, 0.8));
+    animation: particlemove 18s infinite;
+}
+
+.space__particle:nth-child(12) {
+    top: 159px;
+    width: 50%;
+    height: 6%;
+    background: linear-gradient(to right,rgba(255, 5, 1, 0) , rgba(255, 255, 255, 0.8));
+    animation: particlemove 30s infinite;
+}
+
 /*Right to Left particles*/
 .space:nth-child(2) {
     transform: rotate(180deg);
@@ -148,7 +197,7 @@ body {
     top: 45px;
     width: 50%;
     height: 5%;
-    animation: particlemove 30s infinite;
+    animation: particlemove 35s infinite;
 }
 
 .space:nth-child(2) .space__particle:nth-child(3) {
@@ -159,24 +208,73 @@ body {
 }
 
 .space:nth-child(2) .space__particle:nth-child(4) {
-    top: 130px;
+    top: 145px;
     width: 50%;
     height: 6%;
     animation: particlemove 24s infinite;
 }
 
 .space:nth-child(2) .space__particle:nth-child(5) {
-    top: 130px;
+    top: 86px;
     width: 50%;
     height: 1%;
     animation: particlemove 60s infinite;
 }
 
 .space:nth-child(2) .space__particle:nth-child(6) {
-    top: 130px;
+    top: 112px;
     width: 50%;
     height: 8%;
     animation: particlemove 20s infinite;
+}
+
+/*RtoL background particles*/
+.space:nth-child(2) .space__particle:nth-child(7) {
+    top: 14px;
+    width: 50%;
+    height: 4%;
+    animation: particlemove 45s infinite;
+    background: linear-gradient(to right,rgba(255, 5, 1, 0) , rgba(255, 255, 255, 0.8));
+}
+
+.space:nth-child(2) .space__particle:nth-child(8) {
+    top: 44px;
+    width: 50%;
+    height: 6%;
+    animation: particlemove 35s infinite;
+    background: linear-gradient(to right,rgba(255, 5, 1, 0) , rgba(255, 255, 255, 0.8));
+}
+
+.space:nth-child(2) .space__particle:nth-child(9) {
+    top: 129px;
+    width: 50%;
+    height: 3%;
+    animation: particlemove 55s infinite;
+    background: linear-gradient(to right,rgba(255, 5, 1, 0) , rgba(255, 255, 255, 0.8));
+}
+
+.space:nth-child(2) .space__particle:nth-child(10) {
+    top: 144px;
+    width: 50%;
+    height: 7%;
+    animation: particlemove 24s infinite;
+    background: linear-gradient(to right,rgba(255, 5, 1, 0) , rgba(255, 255, 255, 0.8));
+}
+
+.space:nth-child(2) .space__particle:nth-child(11) {
+    top: 85px;
+    width: 50%;
+    height: 2%;
+    animation: particlemove 60s infinite;
+    background: linear-gradient(to right,rgba(255, 5, 1, 0) , rgba(255, 255, 255, 0.8));
+}
+
+.space:nth-child(2) .space__particle:nth-child(12) {
+    top: 111px;
+    width: 50%;
+    height: 9%;
+    animation: particlemove 20s infinite;
+    background: linear-gradient(to right,rgba(255, 5, 1, 0) , rgba(255, 255, 255, 0.8));
 }
 
 a {
