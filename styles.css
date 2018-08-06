@@ -74,6 +74,26 @@ body {
     color: white;
 }
 
+#astroHelmet {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    left: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+    .headerNav {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    #astroBurger {
+        display: none;
+    }
+}
+
 .space {
     position: absolute;
     overflow: hidden;
@@ -334,3 +354,13 @@ p, li {
 	top: 100%;
 	animation: scroll 100s linear 4s infinite;
 }
+/* 
+@media only screen and (max-width: 700px) {
+    .headerNav {
+        display: none;
+    }
+
+    #myFace {
+        margin: 0 auto;
+    }
+} */
