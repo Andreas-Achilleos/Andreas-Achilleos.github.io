@@ -13,12 +13,110 @@ body {
     color: white;
 }
 
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    text-align: center;
+}
+
+ #loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #222;
+    z-index: 100;
+}
+
+#splashMessage {
+    position: relative;
+    color: white;
+    z-index: 100;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    max-width: 50%;
+    margin: 0 auto;
+    top: 40vh;
+}
+
+#splashMessage > h1 {
+    font-size: 4.5em;
+}
+#splashMessage > h2 {
+    font-size: 2.3em;
+}
+
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+}
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}
+
+ #loader-wrapper .loader-section.section-left {
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: all 5s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+            transition: all 5s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+ #loader-wrapper .loader-section.section-right {
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: all 5s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+            transition: all 5s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+ #loader-wrapper {
+    /* visibility: hidden; */
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: all 0.3s 5.3s ease-out;
+            transition: all 0.3s 5.3s ease-out;
+}
+
+#splashMessage {
+    opacity: 0;
+    -webkit-transition: all 4s ease-out;
+            transition: all 4s ease-out;
+    animation-name: fadeOut;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 5.3s;
+}
+
+
+
+#aboutMeToggle {
+    display: none;
+}
+
+#codeToggle {
+    display: none
+}
+
+#myHobbiesToggle {
+    display: none;
+}
+
+#contactToggle {
+    display: none;
+}
+
 #headerUnderlay {
     width: 100%;
     height: 200px;
-    border: 1px solid pink;
-    background: black;
-    opacity: 0.2;
+    border-bottom: 1px solid grey;
+    /* background: black; */
+    /* opacity: 0.2; */
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2));
 }
 #header {
     position: absolute;
@@ -29,7 +127,7 @@ body {
 }
 
 #myFace {
-    /* border: 2px solid red; */
+    /* outline: 2px solid red; */
     width: 200px;
     height: 200px; 
     border-radius: 50%;
@@ -302,6 +400,36 @@ body {
     background: linear-gradient(to right,rgba(255, 5, 1, 0) , rgba(255, 255, 255, 0.8));
 }
 
+.themeSwap {
+    width: 10%;
+    height: 17px;
+    border-radius: 5px;
+}
+
+.themeSwap:focus {
+    outline: 0;
+}
+
+.themeSwap__left {
+    position: absolute;
+    left: 0;
+    background: black;
+    color: white;
+    border: 1px solid lightgrey;
+    cursor: cell;
+    z-index: 2;
+}
+
+.themeSwap__right {
+    position: absolute;
+    right: 0;
+    background: white;
+    color: black;
+    border: 1px solid lightgrey;
+    cursor: cell;
+    z-index: 2;
+}
+
 a {
     font-family: 'Open Sans Condensed', Helvetica, 'Segoe UI', sans-serif;
     font-size: 20px;
@@ -323,7 +451,8 @@ p, li {
 }
 
 #titles {
-	position: absolute;
+    position: absolute;
+    top: -589px;
 	width: 18em;
 	height: 30em;
 	bottom: 0;
@@ -352,7 +481,7 @@ p, li {
 {
 	position: absolute;
 	top: 100%;
-	animation: scroll 100s linear 4s infinite;
+	animation: scroll 100s linear 4s;
 }
 /* 
 @media only screen and (max-width: 700px) {

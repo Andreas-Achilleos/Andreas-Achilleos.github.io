@@ -1,21 +1,110 @@
 <html>
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link id="pagestyle" rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="keyframes.css"> 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+    <script>
+        function swapStyleSheet(sheet) {
+            document.getElementById('pagestyle').setAttribute('href', sheet);
+        }
+
+    function toggleAboutMeDiv() {
+        div = document.getElementById('aboutMeToggle');
+        if(document.getElementById('codeToggle').style.display === "block") {
+            document.getElementById('codeToggle').style.display = "none";
+        }
+        if(document.getElementById('myHobbiesToggle').style.display === "block") {
+            document.getElementById('myHobbiesToggle').style.display = "none";
+        }
+        if(document.getElementById('contactToggle').style.display === "block") {
+            document.getElementById('contactToggle').style.display = "none";
+        }
+        if(div.style.display === "block") {
+            div.style.display = "none";
+        } else {
+            div.style.display = "block";
+        }
+    }
+    function toggleCodeDiv() {
+        div = document.getElementById('codeToggle');
+        if(document.getElementById('aboutMeToggle').style.display === "block") {
+            document.getElementById('aboutMeToggle').style.display = "none";
+        }
+        if(document.getElementById('myHobbiesToggle').style.display === "block") {
+            document.getElementById('myHobbiesToggle').style.display = "none";
+        }
+        if(document.getElementById('contactToggle').style.display === "block") {
+            document.getElementById('contactToggle').style.display = "none";
+        }
+        if(div.style.display === "block") {
+            div.style.display = "none";
+        } else {
+            div.style.display = "block";
+        }
+    }
+    function toggleMyHobbiesDiv() {
+        div = document.getElementById('myHobbiesToggle');
+        if(document.getElementById('aboutMeToggle').style.display === "block") {
+            document.getElementById('aboutMeToggle').style.display = "none";
+        }
+        if(document.getElementById('codeToggle').style.display === "block") {
+            document.getElementById('codeToggle').style.display = "none";
+        }
+        if(document.getElementById('contactToggle').style.display === "block") {
+            document.getElementById('contactToggle').style.display = "none";
+        }
+        if(div.style.display === "block") {
+            div.style.display = "none";
+        } else {
+            div.style.display = "block";
+        }
+    }
+    function toggleContactDiv() {
+        div = document.getElementById('contactToggle');
+        if(document.getElementById('aboutMeToggle').style.display === "block") {
+            document.getElementById('aboutMeToggle').style.display = "none";
+        }
+        if(document.getElementById('codeToggle').style.display === "block") {
+            document.getElementById('codeToggle').style.display = "none";
+        }
+        if(document.getElementById('myHobbiesToggle').style.display === "block") {
+            document.getElementById('myHobbiesToggle').style.display = "none";
+        }
+        if(div.style.display === "block") {
+            div.style.display = "none";
+        } else {
+            div.style.display = "block";
+        }
+    }
+
+    // setTimeout(function(){
+    //     document.getElementsByTagName('body').addClass('loaded');
+    // }, 3000);
+    </script>
 </head>
 <body>
+    <div id="loader-wrapper">
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+        <div id="splashMessage">
+            <h1>Welcome to my site... </h1>
+            <h2>Please take your shoes off.</h2>
+        </div>
+    </div>
+
+    
+
     <div id="bodyContainer">
         <div id="headerUnderlay">
         </div>
         <div id="header">
             <img id="myFace" src="./images/ImBatman.jpg" alt="A picture of me!">
             <nav id="headerNavLayout">
-                <div class="headerNav "><a href="#link1">About me</a></div>
-                <div class="headerNav "><a href="#link2">Code</a></div>
-                <div class="headerNav "><a href="#link3">My hobbies</a></div>
-                <div class="headerNav "><a href="#link4">Contact</a></div>
+                <div class="headerNav " onclick="javascript:toggleAboutMeDiv();"><a href="#link1">About me</a></div>
+                <div class="headerNav " onclick="javascript:toggleCodeDiv();"><a href="#link2">Code</a></div>
+                <div class="headerNav " onclick="javascript:toggleMyHobbiesDiv();"><a href="#link3">My hobbies</a></div>
+                <div class="headerNav " onclick="javascript:toggleContactDiv();"><a href="#link4">Contact</a></div>
                 <div id="astroBurger"><img id="astroHelmet" src="./images/helmetBurger.png"></div>
             </nav>
         </div>
@@ -49,6 +138,56 @@
                 <div class="space__particle"></div>
                 <div class="space__particle"></div>
             </div>
+        </div>
+
+        <button class="themeSwap themeSwap__left" onclick="swapStyleSheet('styles.css')">Original</button>
+        <button class="themeSwap themeSwap__right" onclick="swapStyleSheet('lightStyles.css')">Light</button>
+
+        <div id="aboutMeToggle">
+            <img src="" alt="Me!" id="me">
+            <h2>Who am I?</h2>
+            <p>About me text About me text About me text About me text About me text About me text About me text About me text About me text 
+                About me text About me text About me text About me text About me text About me text About me text About me text About me text 
+                About me text About me text About me text About me text About me text About me text About me text About me text About me text 
+                About me text About me text About me text About me text About me text About me text About me text About me text About me text 
+                About me text About me text About me text About me text About me text About me text About me text About me text About me text 
+            </p>
+        </div>
+
+        <div id="codeToggle">
+            <img src="" alt="Me!" id="me">
+            <h2>Who am I?</h2>
+            <p>Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text 
+                Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text 
+                Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text 
+                Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text 
+                Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text 
+                Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text 
+            </p>
+        </div>
+
+        <div id="myHobbiesToggle">
+            <img src="" alt="Me!" id="me">
+            <h2>Who am I?</h2>
+            <p>My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text 
+                My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text 
+                My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text 
+                My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text 
+                My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text 
+                My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text 
+            </p>
+        </div>
+
+        <div id="contactToggle">
+            <img src="" alt="Me!" id="me">
+            <h2>Who am I?</h2>
+            <p>Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text 
+                Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text 
+                Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text 
+                Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text 
+                Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text 
+                Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text 
+            </p>
         </div>
         
         <div id="titles"><div id="titleContent">
@@ -92,6 +231,6 @@
                 </ul>
             </center>
         </div></div>
-    </div>  
+    </div>    
 </body>
 </html>
