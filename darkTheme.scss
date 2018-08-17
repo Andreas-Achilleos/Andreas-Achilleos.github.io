@@ -140,6 +140,7 @@ body {
             z-index: 1;
             opacity: 0.9;
             transition: transform 0.2s;
+            cursor: crosshair;
             &:hover {
                 transform: scale(1.15);
             }
@@ -178,7 +179,19 @@ body {
     height: $height;
     animation: particlemove $flightTime infinite;
 }
-
+/////////////////////////////////////random(200) - 100 + px;/////////////////////////////////////
+$randomSpeedRtoL1: random(60) + s;
+$randomSpeedRtoL2: random(60) + s;
+$randomSpeedRtoL3: random(60) + s;
+$randomSpeedRtoL4: random(60) + s;
+$randomSpeedRtoL5: random(60) + s;
+$randomSpeedRtoL6: random(60) + s;
+$randomSpeedLtoR1: random(60) + s;
+$randomSpeedLtoR2: random(60) + s;
+$randomSpeedLtoR3: random(60) + s;
+$randomSpeedLtoR4: random(60) + s;
+$randomSpeedLtoR5: random(60) + s;
+$randomSpeedLtoR6: random(60) + s;
 .space {
     position: absolute;
     overflow: hidden;
@@ -190,45 +203,45 @@ body {
         transform: rotate(180deg);
         .space__particle {
             &:nth-child(1) {
-                @include spaceParticleRtoL(15px, 3%, 45s)
+                @include spaceParticleRtoL(15px, 3%, $randomSpeedRtoL1)
             }
             &:nth-child(7) {
-                @include spaceParticleRtoL(14px, 4%, 45s);
+                @include spaceParticleRtoL(14px, 4%, $randomSpeedRtoL1);
                 background: linear-gradient(to right,rgba(255, 5, 1, 0) , rgba(255, 255, 255, 0.8));
             }
             &:nth-child(2) {
-                @include spaceParticleRtoL(45px, 5%, 35s)
+                @include spaceParticleRtoL(45px, 5%, $randomSpeedRtoL2)
             }
             &:nth-child(8) {
-                @include spaceParticleRtoL(44px, 6%, 35s);
+                @include spaceParticleRtoL(44px, 6%, $randomSpeedRtoL2);
                 background: linear-gradient(to right,rgba(255, 5, 1, 0) , rgba(255, 255, 255, 0.8));
             }
             &:nth-child(3) {
-                @include spaceParticleRtoL(130px, 2%, 55s)
+                @include spaceParticleRtoL(130px, 2%, $randomSpeedRtoL3)
             }
             &:nth-child(9) {
-                @include spaceParticleRtoL(129px, 3%, 55s);
+                @include spaceParticleRtoL(129px, 3%, $randomSpeedRtoL3);
                 background: linear-gradient(to right,rgba(255, 5, 1, 0) , rgba(255, 255, 255, 0.8));
             }
             &:nth-child(4) {
-                @include spaceParticleRtoL(145px, 6%, 24s)
+                @include spaceParticleRtoL(145px, 6%, $randomSpeedRtoL4)
             }
             &:nth-child(10) {
-                @include spaceParticleRtoL(144px, 7%, 24s);
+                @include spaceParticleRtoL(144px, 7%, $randomSpeedRtoL4);
                 background: linear-gradient(to right,rgba(255, 5, 1, 0) , rgba(255, 255, 255, 0.8));
             }
             &:nth-child(5) {
-                @include spaceParticleRtoL(86px, 1%, 60s)
+                @include spaceParticleRtoL(86px, 1%, $randomSpeedRtoL5)
             }
             &:nth-child(11) {
-                @include spaceParticleRtoL(85px, 2%, 60s);
+                @include spaceParticleRtoL(85px, 2%, $randomSpeedRtoL5);
                 background: linear-gradient(to right,rgba(255, 5, 1, 0) , rgba(255, 255, 255, 0.8));
             }
             &:nth-child(6) {
-                @include spaceParticleRtoL(112px, 8%, 20s)
+                @include spaceParticleRtoL(112px, 8%, $randomSpeedRtoL6)
             }
             &:nth-child(12) {
-                @include spaceParticleRtoL(111px, 9%, 20s);
+                @include spaceParticleRtoL(111px, 9%, $randomSpeedRtoL6);
                 background: linear-gradient(to right,rgba(255, 5, 1, 0) , rgba(255, 255, 255, 0.8));
             }
         }
@@ -310,6 +323,7 @@ a {
     font-size: 20px;
     text-decoration: none;
     color: white;
+    cursor: crosshair;
 }
 
 h1, h2 {

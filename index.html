@@ -81,6 +81,10 @@
     // setTimeout(function(){
     //     document.getElementsByTagName('body').addClass('loaded');
     // }, 3000);
+
+    var time = Math.random();
+    var particle1 = document.querySelector('.space:nth-child(2) .space__particle:nth-child(1)');
+    particle1.style.setProperty('--animation-time', time + 's');
     </script>
 </head>
 <body>
