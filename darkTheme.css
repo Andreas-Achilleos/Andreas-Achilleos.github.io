@@ -168,6 +168,91 @@ body {
     display: none;
   }
 }
+#header svg {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+}
+#header svg g g #star1 {
+  animation: flicker 3s ease alternate infinite;
+  fill: green;
+}
+#header svg g g #star2 {
+  animation: flicker 2s ease alternate infinite;
+  fill: blue;
+}
+#header svg g g #star3 {
+  animation: flicker 3s ease alternate infinite;
+  fill: yellow;
+}
+#header svg g g #star4 {
+  animation: flicker 4s ease alternate infinite;
+  fill: pink;
+}
+#header svg g g #star5 {
+  animation: flicker 5s ease alternate infinite;
+  fill: silver;
+}
+#header svg g g #star6 {
+  animation: flicker 3s ease alternate infinite;
+  fill: brown;
+}
+#header svg g g #star7 {
+  animation: flicker 5s ease alternate infinite;
+  fill: red;
+}
+#header svg g g #star8 {
+  animation: flicker 2s ease alternate infinite;
+  fill: orange;
+}
+#header svg g g #star9 {
+  animation: flicker 3s ease alternate infinite;
+  fill: gold;
+}
+#header svg g g #star10 {
+  animation: flicker 5s ease alternate infinite;
+  fill: #14f4e8;
+}
+#header svg g g #star11 {
+  animation: flicker 2s ease alternate infinite;
+  fill: #1e4de8;
+}
+#header svg g g #star12 {
+  animation: flicker 5s ease alternate infinite;
+  fill: #910c0c;
+}
+#header svg g g #star13 {
+  animation: flicker 3s ease alternate infinite;
+  fill: #16fbff;
+}
+#header svg g g #star14 {
+  animation: flicker 4s ease alternate infinite;
+  fill: #a9179d;
+}
+#header svg g g #star15 {
+  animation: flicker 5s ease alternate infinite;
+  fill: #4904a9;
+}
+#header svg g g #star16 {
+  animation: flicker 2s ease alternate infinite;
+  fill: #faf315;
+}
+#header svg g g #star17 {
+  animation: flicker 5s ease alternate infinite;
+  fill: #e48209;
+}
+#header svg g g #star18 {
+  animation: flicker 3s ease alternate infinite;
+  fill: #c22a6c;
+}
+#header svg g g #star19 {
+  animation: flicker 3s ease alternate infinite;
+  fill: #4de2cc;
+}
+#header svg g g #star20 {
+  animation: flicker 4s ease alternate infinite;
+  fill: #f596a6;
+}
 
 .space {
   position: absolute;
@@ -184,78 +269,78 @@ body {
   top: 15px;
   width: 50%;
   height: 3%;
-  animation: particlemove 22s infinite;
+  animation: particlemove 24s infinite;
 }
 .space:nth-child(2) .space__particle:nth-child(7) {
   top: 14px;
   width: 50%;
   height: 4%;
-  animation: particlemove 22s infinite;
+  animation: particlemove 24s infinite;
   background: linear-gradient(to right, rgba(255, 5, 1, 0), rgba(255, 255, 255, 0.8));
 }
 .space:nth-child(2) .space__particle:nth-child(2) {
   top: 45px;
   width: 50%;
   height: 5%;
-  animation: particlemove 40s infinite;
+  animation: particlemove 37s infinite;
 }
 .space:nth-child(2) .space__particle:nth-child(8) {
   top: 44px;
   width: 50%;
   height: 6%;
-  animation: particlemove 40s infinite;
+  animation: particlemove 37s infinite;
   background: linear-gradient(to right, rgba(255, 5, 1, 0), rgba(255, 255, 255, 0.8));
 }
 .space:nth-child(2) .space__particle:nth-child(3) {
   top: 130px;
   width: 50%;
   height: 2%;
-  animation: particlemove 54s infinite;
+  animation: particlemove 19s infinite;
 }
 .space:nth-child(2) .space__particle:nth-child(9) {
   top: 129px;
   width: 50%;
   height: 3%;
-  animation: particlemove 54s infinite;
+  animation: particlemove 19s infinite;
   background: linear-gradient(to right, rgba(255, 5, 1, 0), rgba(255, 255, 255, 0.8));
 }
 .space:nth-child(2) .space__particle:nth-child(4) {
   top: 145px;
   width: 50%;
   height: 6%;
-  animation: particlemove 10s infinite;
+  animation: particlemove 58s infinite;
 }
 .space:nth-child(2) .space__particle:nth-child(10) {
   top: 144px;
   width: 50%;
   height: 7%;
-  animation: particlemove 10s infinite;
+  animation: particlemove 58s infinite;
   background: linear-gradient(to right, rgba(255, 5, 1, 0), rgba(255, 255, 255, 0.8));
 }
 .space:nth-child(2) .space__particle:nth-child(5) {
   top: 86px;
   width: 50%;
   height: 1%;
-  animation: particlemove 25s infinite;
+  animation: particlemove 31s infinite;
 }
 .space:nth-child(2) .space__particle:nth-child(11) {
   top: 85px;
   width: 50%;
   height: 2%;
-  animation: particlemove 25s infinite;
+  animation: particlemove 31s infinite;
   background: linear-gradient(to right, rgba(255, 5, 1, 0), rgba(255, 255, 255, 0.8));
 }
 .space:nth-child(2) .space__particle:nth-child(6) {
   top: 112px;
   width: 50%;
   height: 8%;
-  animation: particlemove 21s infinite;
+  animation: particlemove 55s infinite;
 }
 .space:nth-child(2) .space__particle:nth-child(12) {
   top: 111px;
   width: 50%;
   height: 9%;
-  animation: particlemove 21s infinite;
+  animation: particlemove 55s infinite;
   background: linear-gradient(to right, rgba(255, 5, 1, 0), rgba(255, 255, 255, 0.8));
 }
 .space .space__particle {
