@@ -171,67 +171,65 @@ body {
         // background: white;
         width: 100%;
         margin: 0 auto;
-        g g {
-            #star1 {
-                @include starValues(3s, green)
-            }
-            #star2 {
-                @include starValues(2s, blue)
-            }
-            #star3 {
-                @include starValues(3s, yellow)
-            }
-            #star4 {
-                @include starValues(4s, pink)
-            }
-            #star5 {
-                @include starValues(5s, silver)
-            }
-            #star6 {
-                @include starValues(3s, brown)
-            }
-            #star7 {
-                @include starValues(5s, red)
-            }
-            #star8 {
-                @include starValues(2s, orange)
-            }
-            #star9 {
-                @include starValues(3s, gold)
-            }
-            #star10 {
-                @include starValues(5s, rgb(20, 244, 232))
-            }
-            #star11 {
-                @include starValues(2s, rgb(30, 77, 232))
-            }
-            #star12 {
-                @include starValues(5s, rgb(145, 12, 12))
-            }
-            #star13 {
-                @include starValues(3s, rgb(22, 251, 255))
-            }
-            #star14 {
-                @include starValues(4s, rgb(169, 23, 157))
-            }
-            #star15 {
-                @include starValues(5s, rgb(73, 4, 169))
-            }
-            #star16 {
-                @include starValues(2s, rgb(250, 243, 21))
-            }
-            #star17 {
-                @include starValues(5s, rgb(228, 130, 9))
-            }
-            #star18 {
-                @include starValues(3s, rgb(194, 42, 108))
-            }
-            #star19 {
-                @include starValues(3s, rgb(77, 226, 204))
-            }
-            #star20 {
-                @include starValues(4s, rgb(245, 150, 166))
-            }
+        #star1 {
+            @include starValues(3s, green)
+        }
+        #star2 {
+            @include starValues(2s, blue)
+        }
+        #star3 {
+            @include starValues(3s, yellow)
+        }
+        #star4 {
+            @include starValues(4s, pink)
+        }
+        #star5 {
+            @include starValues(5s, silver)
+        }
+        #star6 {
+            @include starValues(3s, brown)
+        }
+        #star7 {
+            @include starValues(5s, red)
+        }
+        #star8 {
+            @include starValues(2s, orange)
+        }
+        #star9 {
+            @include starValues(3s, gold)
+        }
+        #star10 {
+            @include starValues(5s, rgb(20, 244, 232))
+        }
+        #star11 {
+            @include starValues(2s, rgb(30, 77, 232))
+        }
+        #star12 {
+            @include starValues(5s, rgb(145, 12, 12))
+        }
+        #star13 {
+            @include starValues(3s, rgb(22, 251, 255))
+        }
+        #star14 {
+            @include starValues(4s, rgb(169, 23, 157))
+        }
+        #star15 {
+            @include starValues(5s, rgb(73, 4, 169))
+        }
+        #star16 {
+            @include starValues(2s, rgb(250, 243, 21))
+        }
+        #star17 {
+            @include starValues(5s, rgb(228, 130, 9))
+        }
+        #star18 {
+            @include starValues(3s, rgb(194, 42, 108))
+        }
+        #star19 {
+            @include starValues(3s, rgb(77, 226, 204))
+        }
+        #star20 {
+            @include starValues(4s, rgb(245, 150, 166))
         }
     }
 }
