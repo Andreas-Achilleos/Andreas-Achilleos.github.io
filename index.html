@@ -1,7 +1,8 @@
 <html>
+
 <head>
     <link id="pagestyle" rel="stylesheet" href="darkTheme.css">
-    <link rel="stylesheet" href="keyframes.css"> 
+    <link rel="stylesheet" href="keyframes.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
     <script>
@@ -9,74 +10,74 @@
             document.getElementById('pagestyle').setAttribute('href', sheet);
         }
 
-    function toggleAboutMeDiv() {
-        div = document.getElementById('aboutMeToggle');
-        if(document.getElementById('codeToggle').style.display === "block") {
-            document.getElementById('codeToggle').style.display = "none";
+        function toggleAboutMeDiv() {
+            div = document.getElementById('aboutMeToggle');
+            if (document.getElementById('codeToggle').style.display === "block") {
+                document.getElementById('codeToggle').style.display = "none";
+            }
+            if (document.getElementById('myHobbiesToggle').style.display === "block") {
+                document.getElementById('myHobbiesToggle').style.display = "none";
+            }
+            if (document.getElementById('contactToggle').style.display === "block") {
+                document.getElementById('contactToggle').style.display = "none";
+            }
+            if (div.style.display === "block") {
+                div.style.display = "none";
+            } else {
+                div.style.display = "block";
+            }
         }
-        if(document.getElementById('myHobbiesToggle').style.display === "block") {
-            document.getElementById('myHobbiesToggle').style.display = "none";
+        function toggleCodeDiv() {
+            div = document.getElementById('codeToggle');
+            if (document.getElementById('aboutMeToggle').style.display === "block") {
+                document.getElementById('aboutMeToggle').style.display = "none";
+            }
+            if (document.getElementById('myHobbiesToggle').style.display === "block") {
+                document.getElementById('myHobbiesToggle').style.display = "none";
+            }
+            if (document.getElementById('contactToggle').style.display === "block") {
+                document.getElementById('contactToggle').style.display = "none";
+            }
+            if (div.style.display === "block") {
+                div.style.display = "none";
+            } else {
+                div.style.display = "block";
+            }
         }
-        if(document.getElementById('contactToggle').style.display === "block") {
-            document.getElementById('contactToggle').style.display = "none";
+        function toggleMyHobbiesDiv() {
+            div = document.getElementById('myHobbiesToggle');
+            if (document.getElementById('aboutMeToggle').style.display === "block") {
+                document.getElementById('aboutMeToggle').style.display = "none";
+            }
+            if (document.getElementById('codeToggle').style.display === "block") {
+                document.getElementById('codeToggle').style.display = "none";
+            }
+            if (document.getElementById('contactToggle').style.display === "block") {
+                document.getElementById('contactToggle').style.display = "none";
+            }
+            if (div.style.display === "block") {
+                div.style.display = "none";
+            } else {
+                div.style.display = "block";
+            }
         }
-        if(div.style.display === "block") {
-            div.style.display = "none";
-        } else {
-            div.style.display = "block";
+        function toggleContactDiv() {
+            div = document.getElementById('contactToggle');
+            if (document.getElementById('aboutMeToggle').style.display === "block") {
+                document.getElementById('aboutMeToggle').style.display = "none";
+            }
+            if (document.getElementById('codeToggle').style.display === "block") {
+                document.getElementById('codeToggle').style.display = "none";
+            }
+            if (document.getElementById('myHobbiesToggle').style.display === "block") {
+                document.getElementById('myHobbiesToggle').style.display = "none";
+            }
+            if (div.style.display === "block") {
+                div.style.display = "none";
+            } else {
+                div.style.display = "block";
+            }
         }
-    }
-    function toggleCodeDiv() {
-        div = document.getElementById('codeToggle');
-        if(document.getElementById('aboutMeToggle').style.display === "block") {
-            document.getElementById('aboutMeToggle').style.display = "none";
-        }
-        if(document.getElementById('myHobbiesToggle').style.display === "block") {
-            document.getElementById('myHobbiesToggle').style.display = "none";
-        }
-        if(document.getElementById('contactToggle').style.display === "block") {
-            document.getElementById('contactToggle').style.display = "none";
-        }
-        if(div.style.display === "block") {
-            div.style.display = "none";
-        } else {
-            div.style.display = "block";
-        }
-    }
-    function toggleMyHobbiesDiv() {
-        div = document.getElementById('myHobbiesToggle');
-        if(document.getElementById('aboutMeToggle').style.display === "block") {
-            document.getElementById('aboutMeToggle').style.display = "none";
-        }
-        if(document.getElementById('codeToggle').style.display === "block") {
-            document.getElementById('codeToggle').style.display = "none";
-        }
-        if(document.getElementById('contactToggle').style.display === "block") {
-            document.getElementById('contactToggle').style.display = "none";
-        }
-        if(div.style.display === "block") {
-            div.style.display = "none";
-        } else {
-            div.style.display = "block";
-        }
-    }
-    function toggleContactDiv() {
-        div = document.getElementById('contactToggle');
-        if(document.getElementById('aboutMeToggle').style.display === "block") {
-            document.getElementById('aboutMeToggle').style.display = "none";
-        }
-        if(document.getElementById('codeToggle').style.display === "block") {
-            document.getElementById('codeToggle').style.display = "none";
-        }
-        if(document.getElementById('myHobbiesToggle').style.display === "block") {
-            document.getElementById('myHobbiesToggle').style.display = "none";
-        }
-        if(div.style.display === "block") {
-            div.style.display = "none";
-        } else {
-            div.style.display = "block";
-        }
-    }
 
     // setTimeout(function(){
     //     document.getElementsByTagName('body').addClass('loaded');
@@ -93,6 +94,7 @@
     // }
     </script>
 </head>
+
 <body>
     <div id="loader-wrapper">
         <div class="loader-section section-left"></div>
@@ -103,7 +105,7 @@
         </div>
     </div>
 
-    
+
 
     <div id="bodyContainer">
         <div id="headerUnderlay">
@@ -111,11 +113,21 @@
         <div id="header">
             <img id="myFace" src="./images/ImBatman.jpg" alt="A picture of me!">
             <nav id="headerNavLayout">
-                <div class="headerNav " onclick="javascript:toggleAboutMeDiv();"><a href="#link1">About me</a></div>
-                <div class="headerNav " onclick="javascript:toggleCodeDiv();"><a href="#link2">Code</a></div>
-                <div class="headerNav " onclick="javascript:toggleMyHobbiesDiv();"><a href="#link3">My hobbies</a></div>
-                <div class="headerNav " onclick="javascript:toggleContactDiv();"><a href="#link4">Contact</a></div>
-                <div id="astroBurger"><img id="astroHelmet" src="./images/helmetBurger.png"></div>
+                <div class="headerNav " onclick="javascript:toggleAboutMeDiv();">
+                    <a href="#link1">About me</a>
+                </div>
+                <div class="headerNav " onclick="javascript:toggleCodeDiv();">
+                    <a href="#link2">Code</a>
+                </div>
+                <div class="headerNav " onclick="javascript:toggleMyHobbiesDiv();">
+                    <a href="#link3">My hobbies</a>
+                </div>
+                <div class="headerNav " onclick="javascript:toggleContactDiv();">
+                    <a href="#link4">Contact</a>
+                </div>
+                <div id="astroBurger">
+                    <img id="astroHelmet" src="./images/helmetBurger.png">
+                </div>
             </nav>
             <svg width="100%" height="80px" viewBox="0 0 100% 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -159,7 +171,7 @@
                 <div class="space__particle"></div>
                 <div class="space__particle"></div>
             </div>
-    
+
             <div class="space">
                 <div class="space__particle"></div>
                 <div class="space__particle"></div>
@@ -182,91 +194,104 @@
         <div id="aboutMeToggle">
             <img src="" alt="Me!" id="me">
             <h2>Who am I?</h2>
-            <p>About me text About me text About me text About me text About me text About me text About me text About me text About me text 
-                About me text About me text About me text About me text About me text About me text About me text About me text About me text 
-                About me text About me text About me text About me text About me text About me text About me text About me text About me text 
-                About me text About me text About me text About me text About me text About me text About me text About me text About me text 
-                About me text About me text About me text About me text About me text About me text About me text About me text About me text 
+            <p>About me text About me text About me text About me text About me text About me text About me text About me text
+                About me text About me text About me text About me text About me text About me text About me text About me
+                text About me text About me text About me text About me text About me text About me text About me text About
+                me text About me text About me text About me text About me text About me text About me text About me text
+                About me text About me text About me text About me text About me text About me text About me text About me
+                text About me text About me text About me text About me text About me text About me text
             </p>
         </div>
 
         <div id="codeToggle">
             <img src="" alt="Me!" id="me">
             <h2>Who am I?</h2>
-            <p>Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text 
-                Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text 
-                Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text 
-                Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text 
-                Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text 
-                Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text 
+            <p>Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some
+                Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some
+                Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some
+                Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some
+                Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some
+                Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some
+                Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some Code text Some
+                Code text Some Code text Some Code text Some Code text Some Code text
             </p>
         </div>
 
         <div id="myHobbiesToggle">
             <img src="" alt="Me!" id="me">
             <h2>Who am I?</h2>
-            <p>My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text 
-                My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text 
-                My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text 
-                My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text 
-                My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text 
-                My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text 
+            <p>My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text
+                My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies
+                Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies
+                Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies
+                Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies
+                Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies
+                Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies
+                Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text My hobbies Text
             </p>
         </div>
 
         <div id="contactToggle">
             <img src="" alt="Me!" id="me">
             <h2>Who am I?</h2>
-            <p>Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text 
-                Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text 
-                Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text 
-                Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text 
-                Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text 
-                Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text 
+            <p>Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text
+                Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me
+                text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact
+                me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact
+                me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact
+                me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact
+                me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact me text Contact
+                me text Contact me text Contact me text Contact me text Contact me text Contact me text
             </p>
         </div>
-        
-        <div id="titles"><div id="titleContent">
-            <center>
-                <h1>About me</h1>
-                <p>My name is Andy. I am 25 years old and I play the Guitar (and try to build websites).</p>
-                <hr/ style='width: 90%;'><br/>
-                <h2>Programming languages I am learning.</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS (and Sass)</li>
-                    <li>JavaScript</li>
-                    <li>React (with Styled Components)</li>
-                    <li>Redux</li>
-                    <li>JQuery</li>
-                    <li>SQL</li>
-                </ul>
-                <br/>
-                <h2>Programming languages I want to learn.</h2>
-                <ul>
-                    <li>Java</li>
-                    <li>PHP</li>
-                    <li>three.js</li>
-                    <li>Python</li>
-                    <li>Many more...</li>
-                </ul>
-                <br/>
-                <h2>Favourite foods! (Top 5)</h2>
-                <ol>
-                    <li>Souvlakia</li>
-                    <li>Burgers</li>
-                    <li>Calamari</li>
-                    <li>Tava</li>
-                    <li>Pizza</li>
-                </ol>
-                <br/>
-                <h2>Well designed websites</h2>
-                <ul>
-                    <li><a href="https://www.endclothing.com/gb/">END.</a></li>
-                    <li>This website... One day... Hopefully.</li>
-                </ul>
-            </center>
-        </div></div>
-    </div>    
+
+        <div id="titles">
+            <div id="titleContent">
+                <center>
+                    <h1>About me</h1>
+                    <p>My name is Andy. I am 25 years old and I play the Guitar (and try to build websites).</p>
+                    <hr/ style='width: 90%;'>
+                        <br/>
+                        <h2>Programming languages I am learning.</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS (and Sass)</li>
+                            <li>JavaScript</li>
+                            <li>React (with Styled Components)</li>
+                            <li>Redux</li>
+                            <li>JQuery</li>
+                            <li>SQL</li>
+                        </ul>
+                        <br/>
+                        <h2>Programming languages I want to learn.</h2>
+                        <ul>
+                            <li>Java</li>
+                            <li>PHP</li>
+                            <li>three.js</li>
+                            <li>Python</li>
+                            <li>Many more...</li>
+                        </ul>
+                        <br/>
+                        <h2>Favourite foods! (Top 5)</h2>
+                        <ol>
+                            <li>Souvlakia</li>
+                            <li>Burgers</li>
+                            <li>Calamari</li>
+                            <li>Tava</li>
+                            <li>Pizza</li>
+                        </ol>
+                        <br/>
+                        <h2>Well designed websites</h2>
+                        <ul>
+                            <li>
+                                <a href="https://www.endclothing.com/gb/">END.</a>
+                            </li>
+                            <li>This website... One day... Hopefully.</li>
+                        </ul>
+                </center>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
