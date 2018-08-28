@@ -516,3 +516,14 @@ p, li {
 }
 
 /*# sourceMappingURL=darkTheme.css.map */
+
+#trendingPage {
+  position: relative;
+  top: 15px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+#catJif {
+  height: 125px;
+}

@@ -2,9 +2,8 @@ fetch('https://api.giphy.com/v1/gifs/trending?api_key=FiRO1rRBhJH01g579wCtk80HIs
     return response.json();
   })
   .then(function(myJson) {
-    // console.log(JSON.stringify(myJson));
     const giphyTrending = document.querySelector("#root");
-    for(var i = 0; i <= 10; i++) {
+    for(var i = 0; i < 10; i++) {
         var img = document.createElement('img');
         img.src = myJson.data[i].images.fixed_width.url;
         giphyTrending.appendChild(img);
@@ -41,5 +40,10 @@ document.addEventListener('keydown', function(e) {
 });
 
 function activateCheats() {
+  document.body.style.backgroundImage = "url('images/cheatBackground.png')";
+
+  var audio = new Audio('audio/pling.mp3');
+  audio.play();
+
   alert("cheats activated");
 }
