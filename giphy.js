@@ -27,7 +27,7 @@ var konamiCodePosition = 0;
 document.addEventListener('keydown', function(e) {
   var key = allowedKeys[e.keyCode];
   var requiredKey = konamiCode[konamiCodePosition];
-  
+
   if (key == requiredKey) {
     konamiCodePosition++;
     if (konamiCodePosition == konamiCode.length) {
@@ -40,5 +40,10 @@ document.addEventListener('keydown', function(e) {
 });
 
 function activateCheats() {
+  document.body.style.backgroundImage = "url('images/cheatBackground.png')";
+
+  var audio = new Audio('audio/pling.mp3');
+  audio.play();
+
   alert("cheats activated");
 }
